@@ -26,7 +26,7 @@ exports.resetPasswordToken = async (req, res) => {
       { new: true }
     );
     console.log("details-", updateDetails);
-    const url = `http://localhost:3000/update-password/${token}`;
+    const url = `https://studynotionproject-1-wsoo.onrender.com/update-password/${token}`;
     console.log("1");
     await mailSender(
       email,
